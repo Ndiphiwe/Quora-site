@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("//db.onlinewebfonts.com/c/6b6170fe52fb23f505b4e056fefd2679?family=Pacifico");
+@import url("//db.onlinewebfonts.com/c/c18b9353b189d8e62455b8b5a8587321?family=Chapaza");
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.theMainBox {
+  margin: 0 108px;
+  padding: 12px;
+}
+.my-nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d00;
+  position: relative;
+}
+
+.my-nav > .my-nav-header {
+  display: inline;
+}
+
+.my-nav > .my-nav-header > .my-nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.my-nav > .my-nav-btn {
+  display: none;
+}
+
+.my-nav > .my-nav-links {
+  display: inline;
+  font-size: 18px;
+}
+
+.my-nav-links .formBtn {
+  float: right;
+}
+
+.my-nav > .my-nav-links > a {
+  display: inline-block;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #100075;
+}
+
+.my-nav > #my-nav-check {
+  display: none;
+}
+
+#bigWrapper {
+  background: linear-gradient(-45deg, #d0eaff, #f1f8fe, #daf0fd, #f6fbff);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.signUp {
+  background-color: #100075;
+  color: white;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 15px;
+  box-shadow: 2px 3px 10px #0000004d;
+}
+.tryNow {
+  padding: 14px 45px;
+  background-color: #000d83;
+}
+.signIn {
+  background-color: #414ba500;
+  border: 0.1px solid #000d8300;
+  border-radius: 8px;
+  padding: 10px 30px;
+  color: #100075;
+  font-weight: 500;
+  font-size: 15px;
+}
+.signIn:hover {
+  border: 0.1px solid #000d83;
+}
+.navLinks {
+  color: #100075;
+  font-weight: 500;
+}
+#theLogo {
+  margin-left: 30%;
+}
+
+/* ####### MAIN SECTION ######## */
+#mainImage {
+  margin-left: -165px;
+}
+.myFloaters {
+  margin-left: 60px;
+}
+.leftColumn {
+  padding-top: 150px;
+}
+.handWritten {
+  font-family: "Pacifico";
+  color: #fc6363;
+  font-size: 20px;
+}
+.fingertips {
+  font-family: "Verona-DemiBold";
+  font-size: 45px;
+  color: #100075;
+  position: relative;
+  z-index: 2;
+  padding-top: 30px;
+}
+#brushStroke {
+  z-index: 0;
+  position: relative;
+  bottom: 22px;
+  left: 194px;
+}
+.quoraDef {
+  font-family: "Readex Pro";
+  font-size: 18px;
+  color: #414ba5;
+}
+#playIcon {
+  background-color: #ffffff;
+  border: 0.1px solid #000d8300;
+  border-radius: 100px;
+  padding: 10px;
+  margin-left: 25px;
+  box-shadow: 2px 2px 11px #00000015;
+}
+#playIcon:hover {
+  border: 0.1px solid #000d8361;
+  cursor: pointer;
+}
+.playVideo {
+  margin-left: 20px;
+}
+.graph {
+  background-color: #f9f9f9;
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  opacity: 0.9;
+  position: relative;
+  bottom: 220px;
+  left: -109px;
+  box-shadow: -7px 10px 12px #0000001c;
+  padding: 10px;
+}
+.graph p {
+  text-align: center;
+  font-weight: 500;
+  color: #414ba5;
+}
+.graph img {
+  padding-bottom: 10px;
+}
+
+.artMedia {
+  background-color: #f9f9f9;
+  width: 230px;
+  height: 60px;
+  border-radius: 10px;
+  opacity: 0.9;
+  position: relative;
+  bottom: 309px;
+  left: 282px;
+  box-shadow: -7px 10px 12px #0000001c;
+  padding: 10px;
+}
+
+.artMedia img {
+  background-color: #c9e8fb;
+  border: 2px solid #0d0541;
+  border-radius: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+.artMedia p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #414ba5;
+}
+.artMedia #time {
+  font-size: 10px;
+  margin-top: -12px;
+  text-align: left;
+  color: gray;
+}
+
+.congra {
+  background-color: #f9f9f9;
+  width: 220px;
+  height: 70px;
+  border-radius: 10px;
+  opacity: 0.9;
+  position: relative;
+  bottom: 587px;
+  left: 309px;
+  box-shadow: -7px 10px 12px #0000001c;
+  padding: 10px;
+}
+
+.congra .mailIcon {
+  float: left;
+}
+
+.congra p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #41c850;
+}
+.congra #status {
+  font-size: 13px;
+  margin-top: -12px;
+  text-align: left;
+  color: #100075;
+}
+.sideContent {
+  margin-left: 35px;
+}
+
+.myCalendar {
+  background-color: #f4f4f4;
+  width: 230px;
+  height: 62px;
+  border-radius: 10px;
+  opacity: 0.9;
+  position: relative;
+  bottom: 716px;
+  left: -31px;
+  box-shadow: -7px 10px 12px #0000001c;
+  padding: 10px;
+}
+.myCalendar img {
+  background-color: #3cc1fe;
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin-right: 20px;
+}
+
+.myCalendar p {
+  font-size: 15px;
+  font-weight: 800;
+  color: #100075;
+}
+.myCalendar #title {
+  font-size: 13px;
+  margin-top: -15px;
+  text-align: left;
+  color: #100075;
+  font-weight: 500;
+}
+.bars {
+  position: relative;
+  bottom: 852px;
+  left: 405px;
+}
+
+/* ####### FOOTER ####### */
+footer {
+  background-color: #0d0541;
+  color: white;
+  padding: 80px 0 80px 0;
+}
+.firstCol p {
+  font-weight: 600;
+  font-size: 14px;
+}
+#ftrBox h2 {
+  font-family: Chapaza;
+}
+#ftrBox h5 {
+  font-family: Verona-DemiBold;
+}
+#ftrBox p {
+  font-family: "Readex Pro";
+  font-weight: 200;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.link-icons {
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 5px;
+}
+#twitter {
+  background-color: white;
+}
+input[type="text"] {
+  width: 240px;
+  height: 55px;
+  padding-left: 20px;
+  border-radius: 100px;
+  border: none;
+}
+#send {
+  margin-left: -50px;
+  margin-top: -5px;
+}
+
+#usefulLinks #person {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#usefulLinks span {
+  padding-left: 20px;
+}
+#usefulLinks {
+  padding-bottom: 50px;
+}
+#underHR .copyirght {
+  font-weight: 300;
+  font-size: 10px;
+}
+#underHR p {
+  float: left;
+}
+#underHR #visa {
+  float: right;
+}
+
+#payment img {
+  padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .theMainBox {
+    margin: 0;
+    /* padding: 12px; */
+  }
+  .my-nav {
+    width: 100%;
+  }
+  .my-nav > .my-nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .my-nav > .my-nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .my-nav > .my-nav-btn > label:hover,
+  .my-nav #my-nav-check:checked ~ .my-nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .my-nav > .my-nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #100075;
+  }
+  .my-nav > .my-nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  #theLogo {
+    padding: 20px 0 10px 0;
+    margin-left: 30%;
+  }
+  .my-nav-links .formBtn {
+    text-align: center;
+  }
+  .my-nav > .my-nav-links > a {
+    display: block;
+    width: 100%;
+    color: #100075;
+  }
+  .my-nav > #my-nav-check:not(:checked) ~ .my-nav-links {
+    height: 0px;
+  }
+  .my-nav > #my-nav-check:checked ~ .my-nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}

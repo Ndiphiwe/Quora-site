@@ -1,335 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//db.onlinewebfonts.com/c/8b9226d32f5bd91624277406f77205ff?family=Verona-DemiBold" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/1eaea46512.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style/main.css" />
+    <link
+      href="//db.onlinewebfonts.com/c/8b9226d32f5bd91624277406f77205ff?family=Verona-DemiBold"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1eaea46512.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
     <title>Quora.</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
-        @import url('//db.onlinewebfonts.com/c/6b6170fe52fb23f505b4e056fefd2679?family=Pacifico');
-        @import url('//db.onlinewebfonts.com/c/c18b9353b189d8e62455b8b5a8587321?family=Chapaza');
-        
-        /* body{
-            background-color: rgb(234, 243, 253);
-        } */
-
-            .theMainBox{
-                margin: 0 108px;
-                /* padding: 12px; */
-            }
-            .my-nav {
-            height: 50px;
-            width: 100%;
-            background-color: #4d4d4d00;
-            position: relative;
-            }
-
-            .my-nav > .my-nav-header {
-            display: inline;
-            }
-
-            .my-nav > .my-nav-header > .my-nav-title {
-            display: inline-block;
-            font-size: 22px;
-            color: #fff;
-            padding: 10px 10px 10px 10px;
-            }
-
-            .my-nav > .my-nav-btn {
-            display: none;
-            }
-
-            .my-nav > .my-nav-links {
-            display: inline;
-            font-size: 18px;
-            }
-
-            .my-nav-links .formBtn{
-                float: right;
-            }
-
-            .my-nav > .my-nav-links > a {
-            display: inline-block;
-            padding: 5px 5px;
-            text-decoration: none;
-            color: #100075;
-            }
-
-            .my-nav > #my-nav-check {
-            display: none;
-            }
-
-            @media (max-width:600px) {
-                .my-nav{
-                    width: 100%;
-                }
-            .my-nav > .my-nav-btn {
-                display: inline-block;
-                position: absolute;
-                right: 0px;
-                top: 0px;
-            }
-            .my-nav > .my-nav-btn > label {
-                display: inline-block;
-                width: 50px;
-                height: 50px;
-                padding: 13px;
-            }
-            .my-nav > .my-nav-btn > label:hover,.my-nav  #my-nav-check:checked ~ .my-nav-btn > label {
-                background-color: rgba(0, 0, 0, 0.3);
-            }
-            .my-nav > .my-nav-btn > label > span {
-                display: block;
-                width: 25px;
-                height: 10px;
-                border-top: 2px solid #100075;
-            }
-            .my-nav > .my-nav-links {
-                position: absolute;
-                display: block;
-                width: 100%;
-                background-color: white;
-                height: 0px;
-                transition: all 0.3s ease-in;
-                overflow-y: hidden;
-                top: 50px;
-                left: 0px;
-            }
-            #theLogo{
-                padding: 20px 0 10px 0;
-                margin-left: 30%;
-            }
-            .my-nav-links .formBtn{
-                text-align: center;
-            }
-            .my-nav > .my-nav-links > a {
-                display: block;
-                width: 100%;
-                color: #100075;
-            }
-            .my-nav > #my-nav-check:not(:checked) ~ .my-nav-links {
-                height: 0px;
-            }
-            .my-nav > #my-nav-check:checked ~ .my-nav-links {
-                height: calc(100vh - 50px);
-                overflow-y: auto;
-            }
-            }
-
-
-        #bigWrapper {
-            background: linear-gradient(-45deg, #e4f3fd, #f1f8fe, #dff2fe, #d8edfe);
-            background-size: 400% 400%;
-            animation: gradient 5s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        #SignUp{
-            background-color: #100075;
-            color: white;
-            font-weight: 500;
-        }
-        #SignIn{
-            border: none;
-            color: #100075;
-            font-weight: 500; 
-        }
-        .navLinks{
-            color: #100075;
-            font-weight: 500;
-        }
-        #theLogo{
-            margin-left: 30%;
-        }
-        
-
-        /* ####### FOOTER ####### */
-        footer{
-            background-color: #0d0541;
-            color: white;
-            padding: 80px 0 80px 0;
-        }
-        .firstCol p{
-            font-weight: 600;
-            font-size: 14px;
-        }
-        #ftrBox h2{
-            font-family: Chapaza;
-        }
-        #ftrBox h5{
-            font-family: Verona-DemiBold;
-        }
-        #ftrBox p{
-            font-family: 'Readex Pro';
-            font-weight: 200;
-        }
-
-        .link-icons{
-            border: 1px solid white;
-            border-radius: 100px;
-            padding: 5px;
-        }
-        #twitter{
-            background-color: white;
-        }
-        input[type="text"] {
-            width: 240px;
-            height: 55px;
-            padding-left: 20px;
-            border-radius: 100px;
-            border: none;
-        }
-        #send{
-            margin-left: -50px;
-            margin-top: -5px;
-        }
-
-        #usefulLinks #person{
-            margin-bottom: 20px;
-            margin-top: 20px    ;
-        }
-        #usefulLinks span{
-            padding-left: 20px;
-        }
-        #usefulLinks{
-            padding-bottom: 50px;
-        }
-        #underHR .copyirght{
-            font-weight: 300;
-            font-size: 10px;
-        }
-        #underHR p{
-            float: left;
-        }
-        #underHR #visa{
-            float: right;
-        }
-
-        #payment img{
-            padding-left: 10px;
-        }
-    
-    </style>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
     <div id="bigWrapper">
-        <div class="theMainBox">
+      <div class="theMainBox">
         <div class="my-nav">
-            <input type="checkbox" id="my-nav-check">
-            <div class="my-nav-header">
-            </div>
-            <div class="my-nav-btn">
-              <label for="my-nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <div class="my-nav-links">
-                <a href="#" class="navbar-brand navLinks">About</a>
-                <a href="#" class="navbar-brand navLinks">Courses</a>
-                <a href="#" class="navbar-brand navLinks">Pricing</a>
-                <a href="" id="theLogo">
-                    <img src="/assets/images/logo/Logo.png" alt="" width="120">
-                </a>
-                <a href="#" class="formBtn"><button id="SignUp" class="btn btn-outline-success" type="submit">Sign Up</button></a>
-                <a href="#" class="formBtn"><button id="SignIn" class="btn" type="submit">Sign In</button></a>
-            </div>
+          <input type="checkbox" id="my-nav-check" />
+          <div class="my-nav-header"></div>
+          <div class="my-nav-btn">
+            <label for="my-nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </div>
-        <!-- <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <img src="/assets/images/logo/Logo.png" alt="" width="120">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <a class="navbar-brand navLinks">About</a>
-                    <a class="navbar-brand navLinks">Courses</a>
-                    <a class="navbar-brand navLinks">Pricing</a>
-              
-              <form class="d-flex" role="search">
-                <button id="SignIn" class="btn btn-outline-success" type="submit">Sign In</button>
-                <button id="SignUp" class="btn btn-outline-success" type="submit">Sign Up</button>
-              </form>
-            </div>
-            </div>
-          </nav> -->
-        </div>
-    <div>
-        <h1 style="font-family: Verona-DemiBold;">Fingertips</h1>
-        <h2 style="font-family: 'Readex Pro'; font-weight: 800;">Over 500 plus courses in one place</h2>
-        <h2 style="font-family: Pacifico">your e-learning partner</h2>
-    </div>
-</div>
-<div>
-    <footer>
-        <div id="ftrBox" class="container text-white">
-            <div class="row row-cols">
-              <div class="col firstCol" style="padding: 0;">
-                  <h2>Quora.</h2>
-                  <p>St Fosilaa, 20 forst street, 4th <br>Mexico city, Mexico 200014</p>
-                  <box-icon class="link-icons" name='facebook' type='logo' color='#ffffff' size="md"></box-icon>
-                  <box-icon id="twitter" class="link-icons" name='twitter' type='logo' color='#0d0541' size="md" ></box-icon>
-                  <box-icon class="link-icons" name='google-plus' type='logo' color='#ffffff' size="md" ></box-icon>
-                  <box-icon class="link-icons" name='linkedin' type='logo' color='#ffffff' size="md" ></box-icon>
-                  
 
-              </div>
-              <div class="col">
-                <h5>Categories</h5>
-                <p>Design courses</p>
-                <p>Science courses</p>
-                <p>Accounting</p>
-                <p>Management</p>
-              </div>
-              <div class="col">
-                <h5>Useful Links</h5>
-                <p>Payment & Tax</p>
-                <p>Terms of services</p>
-                <p>Your account</p>
-                <p>Privacy policy</p>
-              </div>
-              <div id="usefulLinks" class="col">
-                  <h5>Stay Connected</h5>
-                  <input type="text" placeholder="email address"><img id="send" src="/assets/images/icons/LogoMakr-4RfngF.png" height="45px" alt=""><br>
-                  <div>
-                      <img id="person" src="/assets/images/icons/LogoMakr-8UoRqo.png" height="30" alt=""><span>Call 1(500) 250-3698</span><br>
-                      <img id="mail" src="/assets/images/icons/LogoMakr-5xF1F3.png" height="25" alt=""><span>Support@quora_online.net</span>
+          <div class="my-nav-links">
+            <a href="#" class="navbar-brand navLinks">About</a>
+            <a href="#" class="navbar-brand navLinks">Courses</a>
+            <a href="#" class="navbar-brand navLinks">Pricing</a>
+            <a href="" id="theLogo">
+              <img src="/assets/images/logo/Logo.png" alt="" width="120" />
+            </a>
+            <a href="#" class="formBtn"
+              ><button class="signUp" type="submit">Sign Up</button></a
+            >
+            <a href="#" class="formBtn"
+              ><button id="SignIn" class="signIn" type="submit">
+                Sign In
+              </button></a
+            >
+          </div>
+        </div>
+        <!-- <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <img src="/assets/images/logo/Logo.png" alt="" width="120">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <a class="navbar-brand navLinks">About</a>
+                            <a class="navbar-brand navLinks">Courses</a>
+                            <a class="navbar-brand navLinks">Pricing</a>
+                    
+                    <form class="d-flex" role="search">
+                        <button id="SignIn" class="btn btn-outline-success" type="submit">Sign In</button>
+                        <button id="SignUp" class="btn btn-outline-success" type="submit">Sign Up</button>
+                    </form>
+                    </div>
+                    </div>
+                </nav> -->
+
+        <!-- MAIN SECTION -->
+        <div class="mainSec">
+          <div class="row">
+            <div class="col-lg-6 leftColumn">
+              <span class="handWritten">your e-learning partner</span>
+              <h2 class="fingertips">
+                Online Learning Now
+                In Your Fingertips
+              </h2>
+              <img
+                id="brushStroke"
+                src="/assets/images/homepage/blueLine.png"
+                width="150px"
+                alt=""
+              />
+              <p class="quoraDef">
+                Quora is an online learning platform that offers various premium
+                courses for your skills development.
+              </p>
+              <button class="signUp tryNow" type="submit">Try Now</button
+              ><img
+                src="/assets/images/icons/play-regular-24.png"
+                id="playIcon"
+                alt=""
+              />
+              <span class="navLinks playVideo">Play Video</span>
+            </div>
+            <div class="col-lg-6 rightColumn">
+              <img
+                id="mainImage"
+                src="/assets/images/homepage/surprised-young-woman-using-mobile-phone.png"
+                alt=""
+                width="1000"
+              />
+              <div class="myFloaters">
+                <div class="graph">
+                    <p>Improvement graph</p>
+                    <img src="/assets/images/homepage/LogoMakr-1HKDoz.png" alt="" />
+                  </div>
+                  <div class="artMedia">
+                    <img
+                      src="/assets/images/homepage/nsmartmockups-kzifqkzi-500x500.png"
+                      height="40px"
+                      alt=""
+                    />
+                    <div>
+                      <p>Art And Media Class</p>
+                      <p id="time">Tomorrow at 2.00 pm</p>
+                    </div>
+                  </div>
+                  <div class="congra">
+                    <box-icon
+                      name="envelope"
+                      type="solid"
+                      color="#f87d4e"
+                      class="mailIcon"
+                    ></box-icon>
+                    <div class="sideContent">
+                      <p>Congratulations !!</p>
+                      <p id="status">Your admition completed</p>
+                    </div>
+                  </div>
+                  <div class="myCalendar">
+                      <img src="/assets/images/icons/calendar-solid-24.png" height="40" alt="">
+                    <div class="sideContent">
+                      <p>175k</p>
+                      <p id="title">Tomorrow at 2.00 pm</p>
+                    </div>
+                  </div>
+                  <div class="bars">
+                      <img src="/assets/images/icons/bars.png" height="50" alt="">
                   </div>
               </div>
-              <hr>
-              <div id="underHR" style="padding: 0;">
-                  <p>
-                     <span class="copyirght">Created With</span><img src="/assets/images/icons/LogoMakr-4uoD0i.png" height="15" alt=""><span class="copyirght">By Sajib Das Supriyo-2021.</span>
-                  </p>
-                  <div id="payment">
-                    <img id="visa" src="/assets/images/icons/credit_debit_mastercard.png" height="20px" alt="">
-                    <img id="visa" src="/assets/images/icons/206684_visa.png" height="20px" alt="">
-                    <img id="visa" src="/assets/images/icons/american express_amex.png" height="20px" alt="">
-                </div>
+            </div>
+            <div class="coursesSec">
+                vjksbvj
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- main section ends here -->
+      </div>
+    </div>
+    <div>
+      <!-- FOOTER -->
+      <footer>
+        <div id="ftrBox" class="container text-white">
+          <div class="row row-cols">
+            <div class="col firstCol" style="padding: 0">
+              <h2>Quora.</h2>
+              <p>
+                St Fosilaa, 20 forst street, 4th <br />Mexico city, Mexico
+                200014
+              </p>
+              <box-icon
+                class="link-icons"
+                name="facebook"
+                type="logo"
+                color="#ffffff"
+                size="md"
+              ></box-icon>
+              <box-icon
+                id="twitter"
+                class="link-icons"
+                name="twitter"
+                type="logo"
+                color="#0d0541"
+                size="md"
+              ></box-icon>
+              <box-icon
+                class="link-icons"
+                name="google-plus"
+                type="logo"
+                color="#ffffff"
+                size="md"
+              ></box-icon>
+              <box-icon
+                class="link-icons"
+                name="linkedin"
+                type="logo"
+                color="#ffffff"
+                size="md"
+              ></box-icon>
+            </div>
+            <div class="col">
+              <h5>Categories</h5>
+              <p>Design courses</p>
+              <p>Science courses</p>
+              <p>Accounting</p>
+              <p>Management</p>
+            </div>
+            <div class="col">
+              <h5>Useful Links</h5>
+              <p>Payment & Tax</p>
+              <p>Terms of services</p>
+              <p>Your account</p>
+              <p>Privacy policy</p>
+            </div>
+            <div id="usefulLinks" class="col">
+              <h5>Stay Connected</h5>
+              <input type="text" placeholder="email address" /><img
+                id="send"
+                src="/assets/images/icons/LogoMakr-4RfngF.png"
+                height="45px"
+                alt=""
+              /><br />
+              <div>
+                <img
+                  id="person"
+                  src="/assets/images/icons/LogoMakr-8UoRqo.png"
+                  height="30"
+                  alt=""
+                /><span>Call 1(500) 250-3698</span><br />
+                <img
+                  id="mail"
+                  src="/assets/images/icons/LogoMakr-5xF1F3.png"
+                  height="25"
+                  alt=""
+                /><span>Support@quora_online.net</span>
               </div>
             </div>
+            <hr />
+            <div id="underHR" style="padding: 0">
+              <p>
+                <span class="copyirght">Created With</span
+                ><img
+                  src="/assets/images/icons/LogoMakr-4uoD0i.png"
+                  height="15"
+                  alt=""
+                /><span class="copyirght">By Sajib Das Supriyo-2021.</span>
+              </p>
+              <div id="payment">
+                <img
+                  id="visa"
+                  src="/assets/images/icons/credit_debit_mastercard.png"
+                  height="20px"
+                  alt=""
+                />
+                <img
+                  id="visa"
+                  src="/assets/images/icons/206684_visa.png"
+                  height="20px"
+                  alt=""
+                />
+                <img
+                  id="visa"
+                  src="/assets/images/icons/american express_amex.png"
+                  height="20px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-</div>
+      </footer>
+    </div>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
