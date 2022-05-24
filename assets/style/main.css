@@ -313,10 +313,6 @@ body {
   color: #100075;
   margin-bottom: 50px;
 }
-.cardSec {
-  /* display: flex;
-  justify-content: center; */
-}
 .myCard {
   text-align: center;
   display: inline-block;
@@ -350,7 +346,7 @@ body {
 }
 
 .PopCorTwo .pctDiv {
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -376,6 +372,8 @@ body {
   width: 400px;
   padding: 20px 0 20px 40px;
   box-shadow: -7px 10px 12px #0000001c;
+  position: relative;
+  left: 96px;
 }
 .couPer h3 {
   margin: 0 0 20px 0;
@@ -384,6 +382,9 @@ body {
   width: 250px;
   padding-bottom: 20px;
   box-shadow: -7px 10px 12px #0000001c;
+  position: relative;
+  top: -74px;
+  opacity: 0.9;
 }
 .desInstr .innerBox {
   text-align: center;
@@ -407,6 +408,42 @@ body {
 .enrStu {
   text-align: center;
   width: 220px;
+  padding-bottom: 10px;
+  box-shadow: -7px 10px 12px #0000001c;
+  position: relative;
+  top: -210px;
+  left: 401px;
+}
+.enrStu .rowImg img {
+  border-radius: 100px;
+  border: 2px solid white;
+  margin: 0 0 0 -15px;
+}
+
+#pieIcon {
+  border-radius: 10px;
+  box-shadow: -7px 10px 12px #0000001c;
+  position: relative;
+  top: -547px;
+  left: 480px;
+}
+
+.PopCorTwo h2 {
+  font-family: "Verona-DemiBold";
+  color: #100075;
+  margin-bottom: 50px;
+  padding: 0 200px 0 0;
+}
+.PopCorTwo #colTwo p {
+  padding: 0 150px 30px 0;
+  font-size: 18px;
+  color: #000d83;
+  font-family: "Readex Pro";
+}
+#colTwo {
+  margin: 70px 0 0 0;
+  position: relative;
+  left: 50px;
 }
 
 /* ####### FOOTER ####### */
