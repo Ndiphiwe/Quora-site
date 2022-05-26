@@ -764,7 +764,7 @@ footer {
   padding: 5px;
 }
 #twitter {
-  background-color: white;
+  margin-top: -15px;
 }
 input[type="text"] {
   width: 240px;
