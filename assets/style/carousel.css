@@ -1,0 +1,50 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px 238px 0px 0;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.quoteNav {
+  float: right;
+  margin-right: 275px;
+  margin-top: 80px;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  font-size: 18px;
+  color: #414ba5;
+  font-family: "Readex Pro";
+}
+
+/* Add a blue color to the author */
+.author {
+  font-family: "Readex Pro";
+  font-size: 25px;
+  font-weight: 600;
+  color: #000d83;
+  position: absolute;
+  margin-top: 50px;
+  line-height: 30px;
+}
+.theLocation {
+  font-size: 15px;
+  color: #414ba5;
+  font-weight: 400;
+}
